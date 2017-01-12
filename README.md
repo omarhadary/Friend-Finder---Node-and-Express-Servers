@@ -1,44 +1,38 @@
 # Friend-Finder
 
+![N|Solid](https://s-media-cache-ak0.pinimg.com/564x/76/5a/6f/765a6f3c7775d7dafb31631a077217db.jpg)
 
-This is an Amazon-like storefront which takes orders from customers and depletes stock in the store's inventory.
+Friend-Finder is a dating app that compares results from users' input with other users' results. The app displays a name and picture of the user who best matches.
 
-A database is created to store the inventory and includes 10 different products with columns to store:
-  - Product unique ID
-  - Product name
-  - Department name
-  - Product Price
-  - Count of quantity left in stock 
+  - Express handles routes
+  - Heroku for deployment 
 
-> All user experience is through the terminal and updated to the local database. 
-
-### Demo
-
-A video walkthough can be found here https://youtu.be/jT2KbI3Oas4
+> Full-stack site with user input through the browser. 
 
 ### Tech
 
-Bamazon uses open source tools:
+Friend-Finder uses open source tools:
 
 * [node.js]
-* [MYSQL]
-* [MYSQL Workbench]
-* [npm inquirer]
-* [npm mysql]
+* [npm express]
+* [npm body-parser]
+* [Bootstrap]
+* [JQuery]
+* [Font-Awesome]
 
 ### Installation
 
-Bamazon requires [Node.js](https://nodejs.org/) to run.
+Friend-Finder requires [Node.js](https://nodejs.org/) to run.
 
 Install the dependencies.
 
 ```sh
 $ npm install
-$ node app
 ```
 
 [node.js]: <http://nodejs.org>
-[MYSQL]: <https://www.mysql.com/>
-[MYSQL Workbench]: <http://www.mysql.com/products/workbench/>
-[npm inquirer]: <https://www.npmjs.com/package/inquirer>
-[npm mysql]: <https://www.npmjs.com/package/mysql>
+[npm express]: <https://www.npmjs.com/package/express>
+[npm body-parser]: <https://www.npmjs.com/package/body-parser>
+[Bootstrap]: <http://getbootstrap.com/>
+[JQuery]: <http://api.jquery.com/getb>
+[Font-Awesome]: <http://fontawesome.io/>
