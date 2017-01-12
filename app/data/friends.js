@@ -38,6 +38,15 @@ function totalDifference() {
 
 totalDifference(); 
 
+
+function sorting() {
+    for (i = 0; i < friendsArray.length; i++) {
+    friendsArray.sort(function(a, b){return a.scores[0]-b.scores[0]})
+    console.log(friendsArray);
+}
+}
+sorting();
+
 // function sorting() {
 //     friendsArray.sort(function(a, b){return a.scores[0]-b.scores[0]})
 //     console.log(friendsArray);

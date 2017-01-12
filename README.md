@@ -13,7 +13,7 @@ Friend-Finder is a dating app that compares results from users' input with other
 
 Friend-Finder uses open source tools:
 
-* [node.js]
+* [Node.js]
 * [npm express]
 * [npm body-parser]
 * [Bootstrap]
