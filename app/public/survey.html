@@ -3,143 +3,197 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Friend-Finder</title>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="container">
 		<h1 style="border-bottom: solid; border-color: lightgrey; border-width: 1px; padding-bottom: 4%">Survey Questions</h1>
 		<h2 style="font-weight: bold">About You</h2>
-		<h3>Name (Required)</h3><input style="border-radius: 5px; width: 100%">
-		<h3>Link to Photo Image (Required)</h3><input style="border-radius: 5px; width: 100%">
+		<h3>Name (Required)</h3><input class="form-control" id="name" style="border-radius: 5px; width: 100%">
+		<h3>Link to Photo Image (Required)</h3><input class="form-control" id="photo" style="border-radius: 5px; width: 100%">
 		<h2 style="border-top: solid; border-color: lightgrey; border-width: 1px; padding-top: 4%; font-weight: bold">Question 1</h2>
 		<h3>I make friends easily.</h3>
 		<div class="btn-group">
-			<button aria-expanded="false" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">Select an Option <span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li style="margin-left: 5%" value="1">1 (Strongly Disagree)</li>
-				<li style="margin-left: 5%" value="2">2</li>
-				<li style="margin-left: 5%" value="3">3</li>
-				<li style="margin-left: 5%" value="4">4</li>
-				<li style="margin-left: 5%" value="5">5 (Strongly Agree)</li>
-			</ul>
+			<select class="form-control" id="q1">
+                <option value="">Select an Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 		</div>
 		<h2 style="font-weight: bold">Question 2</h2>
 		<h3>I have a vivid imagination.</h3>
 		<div class="btn-group">
-			<button aria-expanded="false" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">Select an Option <span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li style="margin-left: 5%" value="1">1 (Strongly Disagree)</li>
-				<li style="margin-left: 5%" value="2">2</li>
-				<li style="margin-left: 5%" value="3">3</li>
-				<li style="margin-left: 5%" value="4">4</li>
-				<li style="margin-left: 5%" value="5">5 (Strongly Agree)</li>
-			</ul>
+			<select class="form-control" id="q2">
+                <option value="">Select an Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 		</div>
 		<h2 style="font-weight: bold">Question 3</h2>
 		<h3>I get angry easily.</h3>
 		<div class="btn-group">
-			<button aria-expanded="false" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">Select an Option <span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li style="margin-left: 5%" value="1">1 (Strongly Disagree)</li>
-				<li style="margin-left: 5%" value="2">2</li>
-				<li style="margin-left: 5%" value="3">3</li>
-				<li style="margin-left: 5%" value="4">4</li>
-				<li style="margin-left: 5%" value="5">5 (Strongly Agree)</li>
-			</ul>
+			<select class="form-control" id="q3">
+                <option value="">Select an Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 		</div>
-        <h2 style="font-weight: bold">Question 4</h2>
+		<h2 style="font-weight: bold">Question 4</h2>
 		<h3>I prefer variety to routine.</h3>
-		<div class="btn-group">
-			<button aria-expanded="false" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">Select an Option <span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li style="margin-left: 5%" value="1">1 (Strongly Disagree)</li>
-				<li style="margin-left: 5%" value="2">2</li>
-				<li style="margin-left: 5%" value="3">3</li>
-				<li style="margin-left: 5%" value="4">4</li>
-				<li style="margin-left: 5%" value="5">5 (Strongly Agree)</li>
-			</ul>
+		<<div class="btn-group">
+			<select class="form-control" id="q4">
+                <option value="">Select an Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 		</div>
-        <h2 style="font-weight: bold">Question 5</h2>
+		<h2 style="font-weight: bold">Question 5</h2>
 		<h3>I like to solve complex problems.</h3>
 		<div class="btn-group">
-			<button aria-expanded="false" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">Select an Option <span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li style="margin-left: 5%" value="1">1 (Strongly Disagree)</li>
-				<li style="margin-left: 5%" value="2">2</li>
-				<li style="margin-left: 5%" value="3">3</li>
-				<li style="margin-left: 5%" value="4">4</li>
-				<li style="margin-left: 5%" value="5">5 (Strongly Agree)</li>
-			</ul>
+			<select class="form-control" id="q5">
+                <option value="">Select an Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 		</div>
-        <h2 style="font-weight: bold">Question 6</h2>
+		<h2 style="font-weight: bold">Question 6</h2>
 		<h3>I make people feel welcome.</h3>
 		<div class="btn-group">
-			<button aria-expanded="false" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">Select an Option <span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li style="margin-left: 5%" value="1">1 (Strongly Disagree)</li>
-				<li style="margin-left: 5%" value="2">2</li>
-				<li style="margin-left: 5%" value="3">3</li>
-				<li style="margin-left: 5%" value="4">4</li>
-				<li style="margin-left: 5%" value="5">5 (Strongly Agree)</li>
-			</ul>
+			<select class="form-control" id="q6">
+                <option value="">Select an Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 		</div>
-        <h2 style="font-weight: bold">Question 7</h2>
+		<h2 style="font-weight: bold">Question 7</h2>
 		<h3>I dislike being the center of attention.</h3>
 		<div class="btn-group">
-			<button aria-expanded="false" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">Select an Option <span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li style="margin-left: 5%" value="1">1 (Strongly Disagree)</li>
-				<li style="margin-left: 5%" value="2">2</li>
-				<li style="margin-left: 5%" value="3">3</li>
-				<li style="margin-left: 5%" value="4">4</li>
-				<li style="margin-left: 5%" value="5">5 (Strongly Agree)</li>
-			</ul>
+			<select class="form-control" id="q7">
+                <option value="">Select an Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 		</div>
-        <h2 style="font-weight: bold">Question 8</h2>
+		<h2 style="font-weight: bold">Question 8</h2>
 		<h3>I try to follow the rules.</h3>
 		<div class="btn-group">
-			<button aria-expanded="false" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">Select an Option <span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li style="margin-left: 5%" value="1">1 (Strongly Disagree)</li>
-				<li style="margin-left: 5%" value="2">2</li>
-				<li style="margin-left: 5%" value="3">3</li>
-				<li style="margin-left: 5%" value="4">4</li>
-				<li style="margin-left: 5%" value="5">5 (Strongly Agree)</li>
-			</ul>
+			<select class="form-control" id="q8">
+                <option value="">Select an Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 		</div>
-        <h2 style="font-weight: bold">Question 9</h2>
+		<h2 style="font-weight: bold">Question 9</h2>
 		<h3>I talk to a lot of different people at parties.</h3>
 		<div class="btn-group">
-			<button aria-expanded="false" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">Select an Option <span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li style="margin-left: 5%" value="1">1 (Strongly Disagree)</li>
-				<li style="margin-left: 5%" value="2">2</li>
-				<li style="margin-left: 5%" value="3">3</li>
-				<li style="margin-left: 5%" value="4">4</li>
-				<li style="margin-left: 5%" value="5">5 (Strongly Agree)</li>
-			</ul>
+			<select class="form-control" id="q9">
+                <option value="">Select an Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 		</div>
-        <h2 style="font-weight: bold">Question 10</h2>
+		<h2 style="font-weight: bold">Question 10</h2>
 		<h3>I love to read challenging material.</h3>
 		<div class="btn-group">
-			<button aria-expanded="false" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">Select an Option <span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li style="margin-left: 5%" value="1">1 (Strongly Disagree)</li>
-				<li style="margin-left: 5%" value="2">2</li>
-				<li style="margin-left: 5%" value="3">3</li>
-				<li style="margin-left: 5%" value="4">4</li>
-				<li style="margin-left: 5%" value="5">5 (Strongly Agree)</li>
-			</ul>
+			<select class="form-control" id="q10">
+                <option value="">Select an Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 		</div>
-        <button type="submit" class="btn btn-primary btn-block" style="margin: 2% 0 2% 0"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
- <div style="border-top: solid; border-color: lightgrey; border-width: 1px; padding-top:2%">
-                <a href="/api/friends" target="_blank">API Friends List</a> | <a href="https://github.com/omarhadary/Friend-Finder---Node-and-Express-Servers" target="_blank">GitHub Repo</a>
-            </div>
+		<button class="btn btn-primary btn-block" id="submit" style="margin: 2% 0 2% 0" type="submit"><i aria-hidden="true" class="fa fa-check-circle"></i> Submit</button>
+		<div style="border-top: solid; border-color: lightgrey; border-width: 1px; padding-top:2%">
+			<a href="/api/friends" target="_blank">API Friends List</a> | <a href="https://github.com/omarhadary/Friend-Finder---Node-and-Express-Servers" target="_blank">GitHub Repo</a>
+		</div>
 	</div>
+	<!--modal-->
+	<div class="modal fade" id="resultModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal" type="button">&times;</button>
+					<h2 class="modal-title">Best Match</h2>
+				</div>
+				<div class="modal-body">
+				<h2 id="matchName"></h2><img id="matchPhoto" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"></div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	   // event handling when submit button is clicked
+	   $("#submit").on("click", function() {
+	       // validate all data is entered
+	       function dataEntered() {
+	           var isDataEntered = true;
+	           $(".form-control").each(function() {
+	               // if data is missing
+	               if($(this).val() === "")
+	               isDataEntered = false
+	           })
+	           return isDataEntered;
+	       }
+	       // if all data is entered
+	       if(dataEntered()==true)
+	       {
+	           // create friends object
+	           var friendData = {
+	               name: $("#name").val(),
+	               photo: $("#photo").val(),
+	               scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
+	           }
+	           // create variable with current URL for the AJAX post
+	           var URL = window.location.origin;
+	           // AJAX post the friends object
+	           $.post(URL + "/api/friends", friendData, function(data){
+	               // get the AJAX post result to show best match
+	               $("#matchName").text(data.name);
+	               $("matchPhoto").attr("src", data.photo);
+	               // show match on modal
+	               $("#resultModal").modal("toggle");
+	           });
+	       }
+	       else
+	       {
+	           alert("Complete the missing fields.");
+	       }
+	       return false;
+	   });
+	</script>
 </body>
 </html>
