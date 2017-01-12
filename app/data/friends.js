@@ -1,9 +1,9 @@
 // friends data will be saved as an array of objects
 var friendsArray = [
     {
-        name: "Ahmed",
-        photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-        scores: ["5", "1", "4", "5", "3", "2", "1", "3", "2", "3"]
+        name: "Soke",
+        photo: "http://images.desimartini.com/media/uploads/2015-5/bad-santa.jpg",
+        scores: ["4", "2", "4", "1", "3", "2", "5", "1", "3", "2"]
     },
     {
         name: "Lebowski",
@@ -21,6 +21,28 @@ var friendsArray = [
         scores: ["1", "3", "2", "3", "5", "1", "2", "2", "3", "3"]
     },
 ];
+
+var newFriend =
+    {
+        name: "omar",
+        photo: "http://images.desimartini.com/media/uploads/2015-5/bad-santa.jpg",
+        scores: ["1", "1", "3", "2", "4", "5", "2", "1", "3", "2"]
+    }
+
+function totalDifference() {
+    for (i = 0; i < friendsArray.length; i++) { 
+    var scoresDifference = parseInt(newFriend.scores) - parseInt(friendsArray.scores[i]);
+    console.log(scoresDifference);
+}
+}
+
+totalDifference(); 
+
+// function sorting() {
+//     friendsArray.sort(function(a, b){return a.scores[0]-b.scores[0]})
+//     console.log(friendsArray);
+// }
+// sorting();
 
 // export the friends data
 

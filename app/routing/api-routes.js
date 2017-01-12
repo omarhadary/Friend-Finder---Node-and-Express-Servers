@@ -9,8 +9,9 @@ module.exports = function(app) {
     // POST route for survey results and friends compatibility
     app.post("/api/friends", function(request, response) {
         var newFriend = request.body;
-        console.log(newFriend);
         friendsData.push(newFriend);
         response.json(newFriend);
     });
 }
+
+// take the newFriend scores nad loop through each friend
