@@ -1,1 +1,0 @@
-<?php include_once("app/data/friends.js"); ?>
