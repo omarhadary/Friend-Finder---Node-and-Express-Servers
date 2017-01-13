@@ -23,6 +23,6 @@ require("./app/routing/api-routes.js")(app);
 require("./app/routing/html-routes.js")(app);
 
 // start the server
-app.listen(PORT, function() {
+app.listen(process.env.PORT || PORT, function() {
     console.log("Listening on PORT: "+PORT);
 });
