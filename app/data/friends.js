@@ -22,37 +22,11 @@ var friendsArray = [
     },
 ];
 
-var newFriend =
-    {
-        name: "omar",
-        photo: "http://images.desimartini.com/media/uploads/2015-5/bad-santa.jpg",
-        scores: ["1", "1", "3", "2", "4", "5", "2", "1", "3", "2"]
-    }
-
-function totalDifference() {
-    for (i = 0; i < friendsArray.length; i++) { 
-    var scoresDifference = parseInt(newFriend.scores) - parseInt(friendsArray.scores[i]);
-    console.log(scoresDifference);
-}
-}
-
-totalDifference(); 
-
-
-function sorting() {
-    for (i = 0; i < friendsArray.length; i++) {
-    friendsArray.sort(function(a, b){return a.scores[0]-b.scores[0]})
-    console.log(friendsArray);
-}
-}
-sorting();
-
-// function sorting() {
-//     friendsArray.sort(function(a, b){return a.scores[0]-b.scores[0]})
-//     console.log(friendsArray);
-// }
-// sorting();
-
-// export the friends data
+// var newFriend =
+//     {
+//         name: "omar",
+//         photo: "http://images.desimartini.com/media/uploads/2015-5/bad-santa.jpg",
+//         scores: ["1", "1", "3", "2", "4", "5", "2", "1", "3", "2"]
+//     }
 
 module.exports = friendsArray;

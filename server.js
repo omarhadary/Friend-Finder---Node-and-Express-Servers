@@ -8,7 +8,7 @@ var path = require("path");
 var app = express();
 
 // Set port for server listening
-var PORT = 10000;
+var PORT = process.env.PORT || 10000;
 
 // BodyParser for server to consume data
 app.use(bodyParser.json());
@@ -23,6 +23,6 @@ require("./app/routing/api-routes.js")(app);
 require("./app/routing/html-routes.js")(app);
 
 // start the server
-app.listen(process.env.PORT || PORT, function() {
+app.listen(PORT, function() {
     console.log("Listening on PORT: "+PORT);
 });

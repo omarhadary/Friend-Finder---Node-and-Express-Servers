@@ -14,4 +14,30 @@ module.exports = function(app) {
     });
 }
 
-// take the newFriend scores nad loop through each friend
+// // take the newFriend scores nad loop through each friend
+
+// function totalDifference() {
+//     for (i = 0; i < friendsArray.length; i++) { 
+//     var scoresDifference = parseInt(newFriend.scores) - parseInt(friendsArray.scores[i]);
+//     console.log(scoresDifference);
+// }
+// }
+
+// totalDifference(); 
+
+
+// function sorting() {
+//     for (i = 0; i < friendsArray.length; i++) {
+//     friendsArray.sort(function(a, b){return a.scores[0]-b.scores[0]})
+//     console.log(friendsArray);
+// }
+// }
+// sorting();
+
+// function sorting() {
+//     friendsArray.sort(function(a, b){return a.scores[0]-b.scores[0]})
+//     console.log(friendsArray);
+// }
+// sorting();
+
+// export the friends data
